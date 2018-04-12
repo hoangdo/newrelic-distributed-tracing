@@ -1,5 +1,9 @@
 package com.example.microservice02;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.stream.annotation.EnableBinding;
+import org.springframework.cloud.stream.messaging.Source;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +18,10 @@ public class HelloWorld {
 
     private RestTemplate rt = new RestTemplate();
 
+    @Autowired
+    private Queue source;
+
+
     @GetMapping
     public String hello(HttpServletRequest request) {
         Enumeration<String> headers = request.getHeaderNames();
@@ -27,7 +35,7 @@ public class HelloWorld {
             e.printStackTrace();
         }
 
-        rt.getForEntity("http://localhost:8082", String.class);
+        source.send();
         return "hello the world";
     }
 }

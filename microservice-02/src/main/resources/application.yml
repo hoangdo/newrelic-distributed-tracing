@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    stream:
+      defaultBinder: kafka
+      kafka.binder:
+        zkNodes: localhost:2181
+        brokers: localhost:9092
+      bindings:
+        output:
+          destination: hello
+
+
+server:
+  port: 8081
