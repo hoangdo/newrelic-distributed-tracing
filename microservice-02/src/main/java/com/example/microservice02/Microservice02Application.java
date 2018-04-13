@@ -4,8 +4,6 @@ import org.slf4j.MDC;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.cloud.stream.annotation.EnableBinding;
-import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -23,18 +21,26 @@ public class Microservice02Application {
 		SpringApplication.run(Microservice02Application.class, args);
 	}
 
+	 static final String[] CONTEXTUAL_HEADERS = {
+		"CORRELATION_ID",
+		"x-newrelic-id",
+		"x-newrelic-transaction"
+	};
+
 	@Bean
 	public FilterRegistrationBean someFilterRegistration() {
 		FilterRegistrationBean registration = new FilterRegistrationBean();
 		registration.setFilter(new OncePerRequestFilter() {
 			@Override
 			protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
-				String corrId = httpServletRequest.getHeader("CORRELATION_ID");
-				if (corrId == null) {
-					corrId = UUID.randomUUID().toString();
+				for (String header : CONTEXTUAL_HEADERS) {
+					String corrId = httpServletRequest.getHeader(header);
+					if (corrId == null) {
+						corrId = UUID.randomUUID().toString();
+					}
+					MDC.put(header, corrId);
+					filterChain.doFilter(httpServletRequest, httpServletResponse);
 				}
-				MDC.put("CORRELATION_ID", corrId);
-				filterChain.doFilter(httpServletRequest, httpServletResponse);
 			}
 		});
 		registration.addUrlPatterns("/*");

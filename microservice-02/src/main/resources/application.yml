@@ -10,6 +10,9 @@ spring:
         output:
           destination: hello
 
+logging:
+  pattern:
+    console: "%d [%X{CORRELATION_ID}] [%thread] %-5level %logger : %msg%n"
 
 server:
   port: 8081

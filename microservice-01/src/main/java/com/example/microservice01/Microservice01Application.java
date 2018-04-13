@@ -24,43 +24,45 @@ import java.util.UUID;
 @EnableFeignClients
 public class Microservice01Application {
 
-	private static final String[] CONTEXTUAL_HEADERS = {
-			"CORRELATION_ID",
-			"x-newrelic-id",
-			"x-newrelic-transaction"
-	};
+    public static void main(String[] args) {
+        SpringApplication.run(Microservice01Application.class, args);
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.run(Microservice01Application.class, args);
-	}
+    private static final String[] CONTEXTUAL_HEADERS = {
+        "CORRELATION_ID",
+        "x-newrelic-id",
+        "x-newrelic-transaction"
+    };
 
-	@Bean
-	public FilterRegistrationBean someFilterRegistration() {
-		FilterRegistrationBean registration = new FilterRegistrationBean();
-		registration.setFilter(new OncePerRequestFilter() {
-			@Override
-			protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
-				String corrId = httpServletRequest.getHeader("CORRELATION_ID");
-				if (corrId == null) {
-					corrId = UUID.randomUUID().toString();
-				}
-				MDC.put("CORRELATION_ID", corrId);
-				filterChain.doFilter(httpServletRequest, httpServletResponse);
-			}
-		});
-		registration.addUrlPatterns("/*");
-		registration.setName("someFilter");
-		registration.setOrder(1);
-		return registration;
-	}
+    @Bean
+    public FilterRegistrationBean someFilterRegistration() {
+        FilterRegistrationBean registration = new FilterRegistrationBean();
+        registration.setFilter(new OncePerRequestFilter() {
+            @Override
+            protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
+                for (String header : CONTEXTUAL_HEADERS) {
+                    String corrId = httpServletRequest.getHeader(header);
+                    if (corrId == null) {
+                        corrId = UUID.randomUUID().toString();
+                    }
+                    MDC.put(header, corrId);
+                    filterChain.doFilter(httpServletRequest, httpServletResponse);
+                }
+            }
+        });
+        registration.addUrlPatterns("/*");
+        registration.setName("someFilter");
+        registration.setOrder(1);
+        return registration;
+    }
 
-	@Bean
-	public RequestInterceptor requestInterceptor() {
-		return new RequestInterceptor() {
-			@Override
-			public void apply(RequestTemplate requestTemplate) {
-				requestTemplate.header("CORRELATION_ID", MDC.get("CORRELATION_ID"));
-			}
-		};
-	}
+    @Bean
+    public RequestInterceptor requestInterceptor() {
+        return new RequestInterceptor() {
+            @Override
+            public void apply(RequestTemplate requestTemplate) {
+                requestTemplate.header("CORRELATION_ID", MDC.get("CORRELATION_ID"));
+            }
+        };
+    }
 }

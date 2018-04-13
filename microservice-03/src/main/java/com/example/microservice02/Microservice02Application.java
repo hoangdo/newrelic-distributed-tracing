@@ -1,5 +1,6 @@
 package com.example.microservice02;
 
+import com.newrelic.api.agent.Trace;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
@@ -15,6 +16,7 @@ public class Microservice02Application {
 		SpringApplication.run(Microservice02Application.class, args);
 	}
 
+	@Trace(dispatcher = true)
 	@StreamListener(Sink.INPUT)
 	public void loggerSink(Message<?> content) {
 		System.err.println("Received: " + content);
