@@ -24,11 +24,6 @@ public class HelloWorld {
 
     @GetMapping
     public String hello(HttpServletRequest request) {
-        Enumeration<String> headers = request.getHeaderNames();
-        while (headers.hasMoreElements()) {
-            String header = headers.nextElement();
-            System.err.println(header + " => " + request.getHeader(header));
-        }
         try {
             Thread.sleep(1000l);
         } catch (InterruptedException e) {

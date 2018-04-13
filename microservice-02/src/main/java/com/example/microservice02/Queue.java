@@ -1,5 +1,6 @@
 package com.example.microservice02;
 
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;
@@ -14,6 +15,8 @@ public class Queue {
     private Source source;
 
     public void send() {
-        source.output().send(MessageBuilder.withPayload("a hello world").build());
+        source.output().send(MessageBuilder.withPayload("a hello world")
+                .setHeader("CORRELATION_ID", MDC.get("CORRELATION_ID"))
+                .build());
     }
 }

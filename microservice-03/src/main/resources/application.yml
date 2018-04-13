@@ -4,8 +4,11 @@ server:
 spring:
   cloud:
     stream:
+      defaultBinder: kafka
       kafka.binder:
-        zkNodes: ${ZOOKEEPER_ENDPOINT:localhost:2181}
-        brokers: ${KAFKABROKER_ENDPOINT:localhost:9092}
-      output:
-        destination: hello
+        zkNodes: localhost:2181
+        brokers: localhost:9092
+        headers: [CORRELATION_ID]
+      bindings:
+        input:
+          destination: hello

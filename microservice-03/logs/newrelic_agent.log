@@ -1890,3 +1890,693 @@ Apr 10, 2018 18:04:01 +0700 [19780 27] com.newrelic INFO: Using default collecto
 Apr 10, 2018 18:15:58 +0700 [19780 5] com.newrelic.agent.Agent INFO: JVM is shutting down
 Apr 10, 2018 18:15:58 +0700 [19780 71] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@41b37f22 tried to finish but ServiceManager not started
 Apr 10, 2018 18:15:59 +0700 [19780 5] com.newrelic.agent.Agent INFO: New Relic Agent has shutdown
+Apr 13, 2018 00:46:24 +0700 [2312 1] com.newrelic INFO: Writing to New Relic log file: /Users/hoangdo/newrelic-distributed-tracing/microservice-03/logs/newrelic_agent.log
+Apr 13, 2018 00:46:24 +0700 [2312 1] com.newrelic INFO: JRE vendor Oracle Corporation version 1.8.0_152
+Apr 13, 2018 00:46:24 +0700 [2312 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 25.152-b16
+Apr 13, 2018 00:46:24 +0700 [2312 1] com.newrelic INFO: OS Mac OS X version 10.12.6 arch x86_64
+Apr 13, 2018 00:46:29 +0700 [2312 1] com.newrelic INFO: Agent Host: Hoangs-MacBook-Pro.local IP: 192.168.1.8
+Apr 13, 2018 00:46:29 +0700 [2312 1] com.newrelic INFO: New Relic Agent v4.0.0 is initializing...
+Apr 13, 2018 00:46:29 +0700 [2312 1] com.newrelic INFO: Segment discovery is enabled: false
+Apr 13, 2018 00:46:35 +0700 [2312 1] com.newrelic.agent.deps.org.reflections.Reflections WARN: given scan urls are empty. set urls in the configuration
+Apr 13, 2018 00:46:35 +0700 [2312 1] com.newrelic.agent.deps.org.reflections.Reflections INFO: Reflections collected metadata from input stream using serializer com.newrelic.agent.util.EncodingAwareJsonSerializer
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openjpa-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-request-listener is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jboss-7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-10.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-CAT is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-8.0-312.jdbc3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.1.7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.10.1.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.1
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-environment-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-1.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-dispatcher-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.14 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-jtds is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.2.0
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jms-1.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.0.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-connection-5.1.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7.6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-10 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-2.7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-2.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.11_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-merlia is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.6.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7.0.70 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.2
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-wrap-0.7.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.11.1.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-dynamodb-1.11.106 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-generic is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.12 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-base is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.async-http-client-2.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sqlserver is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jsp-2.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-oranxo is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc7-12.1.0.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-5.1.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-6.4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.javax.xml is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sybase-6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.4
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java-io is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-db2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-async-2.3 is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.0.0
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.1
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.glassfish-3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-2.1.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-http-client-1.3.1 is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-datastore-1.0.0 is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.0
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.2
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1207 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1208 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.12_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-user is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.0.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-socket is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Using deprecated configuration setting rest_annotations for instrumentation com.newrelic.instrumentation.jax-rs-1.0
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jax-rs-1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.15 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-5.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.0
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-3.0.0
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-client-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.8
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-h2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.8
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-1.7.2.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-aop-2 is disabled. Skipping.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-2.2.9 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Using deprecated configuration setting com.newrelic.instrumentation.akka-http-2.0-M1 for instrumentation com.newrelic.instrumentation.akka-http-2.0
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.3
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.thrift-0.8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.9.3
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.9.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8u40 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-PORT is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-1.3.30 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-3.0.8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-ws-2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.4.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.3 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cxf-2.7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.0
+Apr 13, 2018 00:46:35 +0700 [2312 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.2.1.6 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.9.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc-tns is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-http-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-2.4 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.8.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spymemcached-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-driver is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-servlet-9 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2.26 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpurlconnection is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.1.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-jms-2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.12.0
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-jmx-7 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.5 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-1 is enabled. Loading.
+Apr 13, 2018 00:46:35 +0700 [2312 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-ws-2.6.0 is enabled. Loading.
+Apr 13, 2018 00:46:44 +0700 [2312 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+Apr 13, 2018 00:46:44 +0700 [2312 1] com.newrelic INFO: Setting audit_mode to false
+Apr 13, 2018 00:46:44 +0700 [2312 1] com.newrelic INFO: Setting protocol to "https"
+Apr 13, 2018 00:46:47 +0700 [2312 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/hoangdo/newrelic-distributed-tracing/microservice-03/./newrelic.yml
+Apr 13, 2018 00:46:47 +0700 [2312 1] com.newrelic INFO: New Relic Agent v4.0.0 has started
+Apr 13, 2018 00:46:47 +0700 [2312 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@156643d4
+Apr 13, 2018 00:46:47 +0700 [2312 1] com.newrelic INFO: Premain startup complete in 39,127ms
+Apr 13, 2018 00:47:07 +0700 [2312 1] com.newrelic INFO: Server Info: Apache Tomcat/8.5.28
+Apr 13, 2018 00:47:27 +0700 [2312 27] com.newrelic INFO: Host name is Hoangs-MacBook-Pro.local, display host Hoangs-MacBook-Pro.local for application microservice-03
+Apr 13, 2018 00:47:28 +0700 [2312 27] com.newrelic INFO: Collector redirection to collector-251.newrelic.com:443
+Apr 13, 2018 00:47:29 +0700 [2312 27] com.newrelic INFO: Agent run id: WzIse2E6ODQ3MzM0NjgwLGI6MTIwMzMwNzc0LGM6MTkyNTU4MCxkOiI0LjAuMCIsZToiamF2YSIsZjoiSG9hbmdzLU1hY0Jvb2stUHJvLmxvY2FsIixnOlt7YToxMjAzMzA3NzMsYjoibWljcm9zZXJ2aWNlLTAzIn1dfSwyMDkxMTA2MzAxXQ
+Apr 13, 2018 00:47:34 +0700 [2312 27] com.newrelic INFO: Agent 2312@Hoangs-MacBook-Pro.local/microservice-03 connected to collector.newrelic.com:443
+Apr 13, 2018 00:47:34 +0700 [2312 27] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/1925580/applications/120330773
+Apr 13, 2018 00:47:34 +0700 [2312 27] com.newrelic INFO: Using RUM version 1071 for application "microservice-03"
+Apr 13, 2018 00:47:34 +0700 [2312 27] com.newrelic INFO: Real user monitoring is enabled with auto instrumentation for application "microservice-03"
+Apr 13, 2018 00:47:34 +0700 [2312 27] com.newrelic INFO: Using default collector host: collector.newrelic.com
+Apr 13, 2018 00:48:39 +0700 [2312 5] com.newrelic.agent.Agent INFO: JVM is shutting down
+Apr 13, 2018 00:48:39 +0700 [2312 69] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@5f177989 tried to finish but ServiceManager not started
+Apr 13, 2018 00:48:40 +0700 [2312 5] com.newrelic.agent.Agent INFO: New Relic Agent has shutdown
+Apr 13, 2018 00:49:00 +0700 [2318 1] com.newrelic INFO: Writing to New Relic log file: /Users/hoangdo/newrelic-distributed-tracing/microservice-03/logs/newrelic_agent.log
+Apr 13, 2018 00:49:00 +0700 [2318 1] com.newrelic INFO: JRE vendor Oracle Corporation version 1.8.0_152
+Apr 13, 2018 00:49:00 +0700 [2318 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 25.152-b16
+Apr 13, 2018 00:49:00 +0700 [2318 1] com.newrelic INFO: OS Mac OS X version 10.12.6 arch x86_64
+Apr 13, 2018 00:49:05 +0700 [2318 1] com.newrelic INFO: Agent Host: Hoangs-MacBook-Pro.local IP: 192.168.1.8
+Apr 13, 2018 00:49:05 +0700 [2318 1] com.newrelic INFO: New Relic Agent v4.0.0 is initializing...
+Apr 13, 2018 00:49:05 +0700 [2318 1] com.newrelic INFO: Segment discovery is enabled: false
+Apr 13, 2018 00:49:11 +0700 [2318 1] com.newrelic.agent.deps.org.reflections.Reflections WARN: given scan urls are empty. set urls in the configuration
+Apr 13, 2018 00:49:11 +0700 [2318 1] com.newrelic.agent.deps.org.reflections.Reflections INFO: Reflections collected metadata from input stream using serializer com.newrelic.agent.util.EncodingAwareJsonSerializer
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-10.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openjpa-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jboss-7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-request-listener is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.1
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-8.0-312.jdbc3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-environment-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.10.1.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-CAT is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.1.7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-10 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-1.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-jtds is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.14 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-connection-5.1.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jms-1.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-dispatcher-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7.6 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-generic is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.6.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-2.7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.11_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.0.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-dynamodb-1.11.106 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-merlia is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.2.0
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc7-12.1.0.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jsp-2.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-6.4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-2.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-1.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java-io is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-db2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-base is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.2
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.11.1.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-wrap-0.7.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7.0.70 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.async-http-client-2.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sqlserver is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1208 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.12 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.glassfish-3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-oranxo is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.5 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.javax.xml is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.4
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sybase-6 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-http-client-1.3.1 is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-5.1.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-datastore-1.0.0 is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.0
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.0
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-2.1.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.15 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.0.0
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1207 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-client-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-2.2.9 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.8
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-async-2.3 is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.1
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Using deprecated configuration setting rest_annotations for instrumentation com.newrelic.instrumentation.jax-rs-1.0
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jax-rs-1.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-aop-2 is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-socket is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-PORT is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.12_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-h2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-5.5 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.2
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-3.0.0
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.1.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.0.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.6 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-2.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.3
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-user is disabled. Skipping.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8u40 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spymemcached-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-3.0.8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.4 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.4.1 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-1.7.2.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Using deprecated configuration setting com.newrelic.instrumentation.akka-http-2.0-M1 for instrumentation com.newrelic.instrumentation.akka-http-2.0
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.6 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.9.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.9.3
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.9.3 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.8
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.thrift-0.8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpurlconnection is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.8.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-1.3.30 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-8 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-jmx-7 is enabled. Loading.
+Apr 13, 2018 00:49:11 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-servlet-9 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-ws-2.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cxf-2.7 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-jms-2 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-1 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-4.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 12] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.12.0
+Apr 13, 2018 00:49:12 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.2.1.6 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-6 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc-tns is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-http-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-ws-2.6.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-1.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 13] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.0
+Apr 13, 2018 00:49:12 +0700 [2318 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.5 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-driver is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2.26 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.1.0 is enabled. Loading.
+Apr 13, 2018 00:49:12 +0700 [2318 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.5 is enabled. Loading.
+Apr 13, 2018 00:49:21 +0700 [2318 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+Apr 13, 2018 00:49:21 +0700 [2318 1] com.newrelic INFO: Setting audit_mode to false
+Apr 13, 2018 00:49:21 +0700 [2318 1] com.newrelic INFO: Setting protocol to "https"
+Apr 13, 2018 00:49:23 +0700 [2318 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/hoangdo/newrelic-distributed-tracing/microservice-03/./newrelic.yml
+Apr 13, 2018 00:49:23 +0700 [2318 1] com.newrelic INFO: New Relic Agent v4.0.0 has started
+Apr 13, 2018 00:49:23 +0700 [2318 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@156643d4
+Apr 13, 2018 00:49:23 +0700 [2318 1] com.newrelic INFO: Premain startup complete in 39,501ms
+Apr 13, 2018 00:49:44 +0700 [2318 1] com.newrelic INFO: Server Info: Apache Tomcat/8.5.28
+Apr 13, 2018 00:50:03 +0700 [2318 28] com.newrelic INFO: Host name is Hoangs-MacBook-Pro.local, display host Hoangs-MacBook-Pro.local for application microservice-03
+Apr 13, 2018 00:50:05 +0700 [2318 28] com.newrelic INFO: Collector redirection to collector-251.newrelic.com:443
+Apr 13, 2018 00:50:06 +0700 [2318 28] com.newrelic INFO: Agent run id: WzIse2E6ODQ3MzUzNTYxLGI6MTIwMzMwNzc0LGM6MTkyNTU4MCxkOiI0LjAuMCIsZToiamF2YSIsZjoiSG9hbmdzLU1hY0Jvb2stUHJvLmxvY2FsIixnOlt7YToxMjAzMzA3NzMsYjoibWljcm9zZXJ2aWNlLTAzIn1dfSwxNTQ3NzkxMDk0XQ
+Apr 13, 2018 00:50:11 +0700 [2318 28] com.newrelic INFO: Agent 2318@Hoangs-MacBook-Pro.local/microservice-03 connected to collector.newrelic.com:443
+Apr 13, 2018 00:50:11 +0700 [2318 28] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/1925580/applications/120330773
+Apr 13, 2018 00:50:11 +0700 [2318 28] com.newrelic INFO: Using RUM version 1071 for application "microservice-03"
+Apr 13, 2018 00:50:11 +0700 [2318 28] com.newrelic INFO: Real user monitoring is enabled with auto instrumentation for application "microservice-03"
+Apr 13, 2018 00:50:11 +0700 [2318 28] com.newrelic INFO: Using default collector host: collector.newrelic.com
+Apr 13, 2018 00:54:38 +0700 [2318 5] com.newrelic.agent.Agent INFO: JVM is shutting down
+Apr 13, 2018 00:54:38 +0700 [2318 71] com.newrelic INFO: Transaction com.newrelic.agent.Transaction@6dc888bf tried to finish but ServiceManager not started
+Apr 13, 2018 00:54:39 +0700 [2318 5] com.newrelic.agent.Agent INFO: New Relic Agent has shutdown
+Apr 13, 2018 00:55:02 +0700 [2341 1] com.newrelic INFO: Writing to New Relic log file: /Users/hoangdo/newrelic-distributed-tracing/microservice-03/logs/newrelic_agent.log
+Apr 13, 2018 00:55:02 +0700 [2341 1] com.newrelic INFO: JRE vendor Oracle Corporation version 1.8.0_152
+Apr 13, 2018 00:55:02 +0700 [2341 1] com.newrelic INFO: JVM vendor Oracle Corporation Java HotSpot(TM) 64-Bit Server VM version 25.152-b16
+Apr 13, 2018 00:55:02 +0700 [2341 1] com.newrelic INFO: OS Mac OS X version 10.12.6 arch x86_64
+Apr 13, 2018 00:55:07 +0700 [2341 1] com.newrelic INFO: Agent Host: Hoangs-MacBook-Pro.local IP: 192.168.1.8
+Apr 13, 2018 00:55:07 +0700 [2341 1] com.newrelic INFO: New Relic Agent v4.0.0 is initializing...
+Apr 13, 2018 00:55:07 +0700 [2341 1] com.newrelic INFO: Segment discovery is enabled: false
+Apr 13, 2018 00:55:13 +0700 [2341 1] com.newrelic.agent.deps.org.reflections.Reflections WARN: given scan urls are empty. set urls in the configuration
+Apr 13, 2018 00:55:13 +0700 [2341 1] com.newrelic.agent.deps.org.reflections.Reflections INFO: Reflections collected metadata from input stream using serializer com.newrelic.agent.util.EncodingAwareJsonSerializer
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jboss-7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-10.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openjpa-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-request-listener is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.1
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-8.0-312.jdbc3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-CAT is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.10.1.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-environment-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.6.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.1.7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-jtds is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.14 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-1.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.0.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-connection-5.1.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-dispatcher-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-liberty-profile-8.5.5.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jms-1.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7.6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.11_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-10 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.11.1.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.6.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.2.0
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sqlserver is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resin-3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-merlia is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-2.7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-generic is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.resteasy-2.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-dynamodb-1.11.106 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.javax.xml is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.2
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-4.0.0
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc7-12.1.0.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.async-http-client-2.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7.0.70 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-6.4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jsp-2.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-wrap-0.7.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-base is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-2.12_3.2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-2.12 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-inet-oranxo is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java-io is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-db2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.glassfish-3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.0.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.4
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.ning-async-http-client-1.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-sybase-6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mariadb-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-http-client-1.3.1 is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-datastore-1.0.0 is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-5.1.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-2.1.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.rabbit-amqp-3.5.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.4.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-8.5.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.0
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-async-2.3 is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1208 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.1
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-postgresql-9.4.1207 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-socket is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.3.15 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-3.8
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-3.8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.tomcat-5.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.openejb-3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Using deprecated configuration setting rest_annotations for instrumentation com.newrelic.instrumentation.jax-rs-1.0
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jax-rs-1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.2
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Using deprecated configuration setting netty_instrumentation for instrumentation com.newrelic.instrumentation.netty-4.0.8
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.netty-4.0.8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Using deprecated configuration setting spring_annotations for instrumentation com.newrelic.instrumentation.spring-3.0.0
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cassandra-datastax-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-can-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-aop-2 is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-core-0.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.3
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-user is disabled. Skipping.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.slick-3.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8u40 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jedis-2.7.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Using deprecated configuration setting akka_instrumentation for instrumentation com.newrelic.instrumentation.akka-2.0
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-h2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.anorm-2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-1.7.2.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-core-3.4.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-ei2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.okhttp-3.4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.weblogic-12.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-3.1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-3.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.9.3
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.9.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-9.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Using deprecated configuration setting com.newrelic.instrumentation.akka-http-2.0-M1 for instrumentation com.newrelic.instrumentation.akka-http-2.0
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-4.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-3.0.8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpurlconnection is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hystrix-1.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.aws-java-sdk-1.3.30 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-client-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.akka-http-1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-mysql-multihost-connections-6.0.2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-hsqldb-2.2.9 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.thrift-0.8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-4.3 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.wildfly-8-PORT is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mule-3.6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-jmx-7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.mongodb-3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-ws-2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.vertx-web-3.3.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.httpclient-4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-1.4.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.grails-2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.9.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spray-http-1.3.1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.cxf-2.7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 8] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jcache-1.0.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-driver is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 11] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jets3t-0.8.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-1 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.solr-5.1.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 7] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.java.completable-future-jdk8 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jetty-servlet-9 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Using deprecated configuration setting play2_instrumentation for instrumentation com.newrelic.instrumentation.play-2.0
+Apr 13, 2018 00:55:14 +0700 [2341 13] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-embedded-derby-10.2.1.6 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spring-jms-2 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.servlet-2.4 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Using deprecated configuration setting scala_instrumentation for instrumentation com.newrelic.instrumentation.scala-2.12.0
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.scala-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-ojdbc-tns is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.spymemcached-2.12.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 9] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.hibernate-3.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-2.5 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 12] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.play-ws-2.6.0 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 6] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.websphere-7 is enabled. Loading.
+Apr 13, 2018 00:55:14 +0700 [2341 10] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jersey-client-2.26 is enabled. Loading.
+Apr 13, 2018 00:55:23 +0700 [2341 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+Apr 13, 2018 00:55:23 +0700 [2341 1] com.newrelic INFO: Setting audit_mode to false
+Apr 13, 2018 00:55:23 +0700 [2341 1] com.newrelic INFO: Setting protocol to "https"
+Apr 13, 2018 00:55:25 +0700 [2341 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/hoangdo/newrelic-distributed-tracing/microservice-03/./newrelic.yml
+Apr 13, 2018 00:55:25 +0700 [2341 1] com.newrelic INFO: New Relic Agent v4.0.0 has started
+Apr 13, 2018 00:55:25 +0700 [2341 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@156643d4
+Apr 13, 2018 00:55:25 +0700 [2341 1] com.newrelic INFO: Premain startup complete in 38,981ms
+Apr 13, 2018 00:55:46 +0700 [2341 1] com.newrelic INFO: Server Info: Apache Tomcat/8.5.28
+Apr 13, 2018 00:56:05 +0700 [2341 27] com.newrelic INFO: Host name is Hoangs-MacBook-Pro.local, display host Hoangs-MacBook-Pro.local for application microservice-03
+Apr 13, 2018 00:56:06 +0700 [2341 27] com.newrelic INFO: Collector redirection to collector-251.newrelic.com:443
+Apr 13, 2018 00:56:08 +0700 [2341 27] com.newrelic INFO: Agent run id: WzIse2E6ODQ3Mzk5OTcxLGI6MTIwMzMwNzc0LGM6MTkyNTU4MCxkOiI0LjAuMCIsZToiamF2YSIsZjoiSG9hbmdzLU1hY0Jvb2stUHJvLmxvY2FsIixnOlt7YToxMjAzMzA3NzMsYjoibWljcm9zZXJ2aWNlLTAzIn1dfSw5NTkzMjE4MDJd
+Apr 13, 2018 00:56:13 +0700 [2341 27] com.newrelic INFO: Agent 2341@Hoangs-MacBook-Pro.local/microservice-03 connected to collector.newrelic.com:443
+Apr 13, 2018 00:56:13 +0700 [2341 27] com.newrelic INFO: Reporting to: https://rpm.newrelic.com/accounts/1925580/applications/120330773
+Apr 13, 2018 00:56:13 +0700 [2341 27] com.newrelic INFO: Using RUM version 1071 for application "microservice-03"
+Apr 13, 2018 00:56:13 +0700 [2341 27] com.newrelic INFO: Real user monitoring is enabled with auto instrumentation for application "microservice-03"
+Apr 13, 2018 00:56:13 +0700 [2341 27] com.newrelic INFO: Using default collector host: collector.newrelic.com

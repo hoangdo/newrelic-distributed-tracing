@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;
+import org.springframework.messaging.Message;
 
 @EnableBinding(Sink.class)
 @SpringBootApplication
@@ -15,7 +16,7 @@ public class Microservice02Application {
 	}
 
 	@StreamListener(Sink.INPUT)
-	public void loggerSink(byte[] content) {
-		System.err.println("Received: " + String.valueOf(content));
+	public void loggerSink(Message<?> content) {
+		System.err.println("Received: " + content);
 	}
 }

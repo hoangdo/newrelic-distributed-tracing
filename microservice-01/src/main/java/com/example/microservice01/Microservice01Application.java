@@ -1,5 +1,8 @@
 package com.example.microservice01;
 
+import com.newrelic.api.agent.HeaderType;
+import com.newrelic.api.agent.NewRelic;
+import com.newrelic.api.agent.OutboundHeaders;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.slf4j.MDC;
@@ -21,6 +24,12 @@ import java.util.UUID;
 @EnableFeignClients
 public class Microservice01Application {
 
+	private static final String[] CONTEXTUAL_HEADERS = {
+			"CORRELATION_ID",
+			"x-newrelic-id",
+			"x-newrelic-transaction"
+	};
+
 	public static void main(String[] args) {
 		SpringApplication.run(Microservice01Application.class, args);
 	}
@@ -31,7 +40,11 @@ public class Microservice01Application {
 		registration.setFilter(new OncePerRequestFilter() {
 			@Override
 			protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
-				MDC.put("CORRELATION_ID", UUID.randomUUID().toString());
+				String corrId = httpServletRequest.getHeader("CORRELATION_ID");
+				if (corrId == null) {
+					corrId = UUID.randomUUID().toString();
+				}
+				MDC.put("CORRELATION_ID", corrId);
 				filterChain.doFilter(httpServletRequest, httpServletResponse);
 			}
 		});

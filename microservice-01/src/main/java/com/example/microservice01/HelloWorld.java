@@ -30,14 +30,9 @@ public class HelloWorld {
 
     @GetMapping
     public String hello(HttpServletRequest request) {
-        Enumeration<String> headers = request.getHeaderNames();
-        while (headers.hasMoreElements()) {
-            String header = headers.nextElement();
-            System.err.println(header + " => " + request.getHeader(header));
-        }
         LOGGER.error("now calling the other microservice-02");
         anotherRest.sayhello();
-        new RestTemplate().getForEntity("http://localhost:8081", String.class);
+       // new RestTemplate().getForEntity("http://localhost:8081", String.class);
         return "hello the world";
     }
 }
