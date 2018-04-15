@@ -1,8 +1,6 @@
 package com.example.microservice01;
 
-import com.newrelic.api.agent.HeaderType;
 import com.newrelic.api.agent.NewRelic;
-import com.newrelic.api.agent.OutboundHeaders;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.slf4j.MDC;
@@ -29,9 +27,7 @@ public class Microservice01Application {
     }
 
     private static final String[] CONTEXTUAL_HEADERS = {
-        "CORRELATION_ID",
-        "x-newrelic-id",
-        "x-newrelic-transaction"
+        "CORRELATION_ID"
     };
 
     @Bean
@@ -46,8 +42,10 @@ public class Microservice01Application {
                         corrId = UUID.randomUUID().toString();
                     }
                     MDC.put(header, corrId);
-                    filterChain.doFilter(httpServletRequest, httpServletResponse);
                 }
+                System.err.println(MDC.get("CORRELATION_ID"));
+                NewRelic.addCustomParameter("CORRELATION_ID", MDC.get("CORRELATION_ID"));
+                filterChain.doFilter(httpServletRequest, httpServletResponse);
             }
         });
         registration.addUrlPatterns("/*");
@@ -56,12 +54,14 @@ public class Microservice01Application {
         return registration;
     }
 
-    @Bean
+     @Bean
     public RequestInterceptor requestInterceptor() {
         return new RequestInterceptor() {
             @Override
             public void apply(RequestTemplate requestTemplate) {
-                requestTemplate.header("CORRELATION_ID", MDC.get("CORRELATION_ID"));
+                for (String header : CONTEXTUAL_HEADERS) {
+                    requestTemplate.header(header, MDC.get(header));
+                }
             }
         };
     }

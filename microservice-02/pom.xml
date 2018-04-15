@@ -43,6 +43,11 @@
 			<artifactId>newrelic-api</artifactId>
 			<version>4.0.0</version>
 		</dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.netflix.feign</groupId>-->
+            <!--<artifactId>feign-httpclient</artifactId>-->
+            <!--<version>8.18.0</version>-->
+        <!--</dependency>-->
 
 		<dependency>
 			<groupId>com.h2database</groupId>

@@ -5,7 +5,7 @@ spring:
       kafka.binder:
         zkNodes: localhost:2181
         brokers: localhost:9092
-        headers: [CORRELATION_ID, x-newrelic-id, x-newrelic-transaction]
+        headers: [CORRELATION_ID]
       bindings:
         output:
           destination: hello

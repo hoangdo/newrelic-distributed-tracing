@@ -13,7 +13,7 @@ common: &default_settings
   # account. For example, if your license key is 12345 use this:
   # license_key: '12345'
   # The key binds your Agent's data to your account in the New Relic service.
-  license_key: '065d7bba0aa75451d9bace3ebabec111eb04f3d0'
+  license_key: 'd81f53bbcf48c892ed80748b7a8e657f8c3f7547'
 
   # Agent Enabled
   # Use this setting to disable the agent instead of removing it from the startup command.
@@ -55,7 +55,7 @@ common: &default_settings
   # The levels in increasing order of verboseness are:
   #   off, severe, warning, info, fine, finer, finest
   # Default is info.
-  log_level: info
+  log_level: warning
 
   # Log all data sent to and from New Relic in plain text.
   # This setting is dynamic, so changes do not require restarting your application.
